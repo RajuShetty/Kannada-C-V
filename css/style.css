@@ -401,7 +401,9 @@ span {
 	text-decoration: none;
 }
 iframe {
+	overflow:auto;
 	-webkit-overflow-scrolling: touch;
+	
 }
 .highlight {
     padding: 16px;
