@@ -3,15 +3,15 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "in.kannadachristiansongs.app"
-        version   = "1.0.8"
-		android-versionCode="10008">
+        id        = "in.kannadachristianvideos.app"
+        version   = "1.0.0"
+		android-versionCode="10000">
 
     <!-- Change app id (above), name, description, and author. App ID can be any reverse domain name, such as com.mycompany.app -->
-    <name>Kannada Christian Songs</name>
+    <name>Kannada Christian Videos</name>
 
     <description>
-        Old and new, we have made biggest collection of the Kannada Spiritual songs. Single website for Karnataka, Listen, Read Lyrics, Communicate and Be blessed.
+        Old and new, we have made biggest collection of the Kannada Christian Videos. Single website for Karnataka. 
     </description>
 
     <author href="http://kannadachristiansongs.in/" email="Rajushetty.b@gmail.com">
@@ -125,9 +125,9 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
-    <platform name="ios">
+    <!-- <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-    </platform>
+    </platform> -->
 
 </widget>
