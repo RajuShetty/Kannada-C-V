@@ -11,7 +11,9 @@
                           style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
                           script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
 
-		        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        
 		 <link rel="stylesheet" href="css/googlefontroboto.css" type="text/css">
     <link rel="stylesheet" href="css/MaterialIcons.css" type="text/css">
     <link rel="stylesheet" href="css/animsition.css" type="text/css">
@@ -29,9 +31,8 @@
 			
           </a>
         </div>
-        <div id="online"> 
-		<iframe src="http://allchristianvideos.com/kannada/?appp=2" width="100" height="100">
-            <!-- the iframe is dynamically created here after we check offline/online connection --> </iframe>
+        <div id="online" data-iframe="http://allchristianvideos.com/kannada//?appp=2" style="height:2350px !important;">
+            <!-- the iframe is dynamically created here after we check offline/online connection -->
         </div>
 		 
         <div id="offline-footer">
@@ -39,11 +40,8 @@
             <button class="button button-positive" id="go-offline">Offline Mode</button>
             <button class="button button-positive" id="close-offline">Close</button>
         </div>
-
-
-
-        <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
-		<script type="text/javascript"> app.initialize();   </script>
+		
+		<script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="connection.js"></script>
         <script type="text/javascript" src="init.js"></script>
         <script type="text/javascript" src="cordova.js"></script>

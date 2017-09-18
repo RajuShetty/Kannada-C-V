@@ -400,9 +400,7 @@ span {
 	font-size: 18px;
 	text-decoration: none;
 }
-iframe {
-	overflow:auto;
-	-webkit-overflow-scrolling: touch;
+
 	
 }
 .highlight {

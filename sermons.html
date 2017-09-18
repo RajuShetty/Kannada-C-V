@@ -13,10 +13,7 @@
 
         <link rel="stylesheet" type="text/css" href="style.css">
 
-        <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
-
-        <script type="text/javascript" src="connection.js"></script>
-        <script type="text/javascript" src="init.js"></script>
+        
 		 <link rel="stylesheet" href="css/googlefontroboto.css" type="text/css">
     <link rel="stylesheet" href="css/MaterialIcons.css" type="text/css">
     <link rel="stylesheet" href="css/animsition.css" type="text/css">
@@ -28,14 +25,13 @@
 
     </head>
     <body>
-	<div class="back">
+	<div class="back" >
           <a href="index.html">
             <i class="material-icons" style="line-height:2; color:#ffffff; padding-left:24%;">home</i>
 			
           </a>
         </div>
-		
-         <div id="online" placeholder="loading.."> <iframe placeholder="loading.." src="http://allchristianvideos.com/kannada/?appp=2" width="100" height="100"></iframe>
+        <div id="online" data-iframe="http://allchristianvideos.com/kannada//?appp=2" style="height:2350px !important;">
             <!-- the iframe is dynamically created here after we check offline/online connection -->
         </div>
 		 
@@ -44,7 +40,10 @@
             <button class="button button-positive" id="go-offline">Offline Mode</button>
             <button class="button button-positive" id="close-offline">Close</button>
         </div>
-
+		
+		<script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="connection.js"></script>
+        <script type="text/javascript" src="init.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript">
             jQuery(document).ready( function() {
