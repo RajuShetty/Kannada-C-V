@@ -65,16 +65,12 @@ push.on('error', function(e) {
 	push.on('notification', function(data) {
      console.log('notification event');
      var cards = document.getElementById("cards");
-     var push = '<div class="row">' +
-       '<div class="col s12 m6">' +
-       '  <div class="card darken-1">' +
-       '    <div class="card-content black-text">' +
-       '      <span class="card-title black-text">' + data.title + '</span>' +
-       '      <p>' + data.message + '</p>' +
+     var push = '<div class="card mdl-shadow--1dp">' +
+       '<div class="card-content profile-image bg-3">' +
+       '      <h1>' + data.title + '</h1>' +
+       '      <span>' + data.message + '</span>' +
        '      <p>' + data.additionalData.foreground + '</p>' +
        '    </div>' +
-       '  </div>' +
-       ' </div>' +
        '</div>';
      cards.innerHTML += push;
 
