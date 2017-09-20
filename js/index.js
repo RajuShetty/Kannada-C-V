@@ -48,6 +48,9 @@ var app = {
 });
 
 push.on('registration', function(data) {
+	 console.log('deviceready event');
+        document.getElementById('regId').innerHTML = 'true';
+		
 	console.log(data.registrationId);
 	var deviceToken = data.registrationId;
 	$.ajax({
@@ -108,8 +111,7 @@ push.on('error', function(e) {
 		
  
  
-        console.log('deviceready event');
-        document.getElementById('regId').innerHTML = 'true';
+       
     }
 };
 
