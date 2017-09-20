@@ -15,29 +15,79 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-		window.plugins.PushbotsPlugin.initialize("58b931954a9efa92a18b4567", {"android":{"sender_id":"629172333031"}});
-		// Should be called once app receive the notification only while the application is open or in background
-		window.plugins.PushbotsPlugin.on("notification:received", function(data){
-			console.log("received:" + JSON.stringify(data));
-		});
+		var push = PushNotification.init({
+	android: {
+	},
+	ios: {
+		alert: "true",
+		badge: "true",
+		sound: "true"
+	},
+	windows: {}
+});
+
+push.on('registration', function(data) {
+	console.log(data.registrationId);
+	var deviceToken = data.registrationId;
+	$.ajax({
+        "url": "http://vineyardworkerschurch.org/?smpushcontrol=savetoken",
+        "dataType": "json",
+        "method": "POST",
+        "data": {
+            "device_token" : deviceToken,
+            "device_type" : 'android'
+        },
+        "success": function(response) {
+            console.log("Device ID "+deviceToken+" sent successfuly");
+        }
+    });
+});
+
+push.on('notification', function(data) {
+	data.message,
+	data.title,
+	data.count,
+	data.sound,
+	data.image,
+	data.additionalData
+	console.log(data);
+	alert(data.message);
+});
+
+push.on('error', function(e) {
+	console.log(e.message);
+});
 		
-		// Should be called once the notification is clicked
-		window.plugins.PushbotsPlugin.on("notification:clicked", function(data){
-			console.log("clicked:" + JSON.stringify(data));
-		});
-		
-        app.receivedEvent('deviceready');
-    },
+push.on('error', function(e) {
+	console.log("Error");
+});
 	
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+	push.on('notification', function(data) {
+     console.log('notification event');
+     var cards = document.getElementById("cards");
+     var push = '<div class="row">' +
+       '<div class="col s12 m6">' +
+       '  <div class="card darken-1">' +
+       '    <div class="card-content black-text">' +
+       '      <span class="card-title black-text">' + data.title + '</span>' +
+       '      <p>' + data.message + '</p>' +
+       '      <p>' + data.additionalData.foreground + '</p>' +
+       '    </div>' +
+       '  </div>' +
+       ' </div>' +
+       '</div>';
+     cards.innerHTML += push;
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
+     app.push.finish(function() {
+         console.log('success');
+     }, function() {
+         console.log('error');
+     });
+ });	
+		
+ 
+ 
+        console.log('deviceready event');
+        document.getElementById('regId').innerHTML = 'true';
     }
 };
