@@ -84,15 +84,36 @@
         <main class="mdl-layout__content">
 			
 <br/> 
+<nav>
+	   	    <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Push Demo</a>
+		    </div>
+		</nav>
 
-<div id="cards"></div>
+		<div class="row">
+		  <div class="col s12 m6">
+		    <div class="card darken-1">
+		      <div class="card-content black-text">
+		        <span class="card-title black-text">Device Ready</span>
+		        <p id="regId">false</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="cards"></div>
+
+    <div id="cats" style="display:none">
+      <img src="img/yawn.jpg"/>
+      <button id="toggleBtn">Close</button>
+    </div>
+
 
 			<div class="card mdl-shadow--1dp " >
 			
             <div class="card-content profile-image bg-3 ">
 			 <h1>ಹಾಡುಗಳು (Songs)</h1>
-					 <span class="card-title black-text">Device Ready</span>
-		        <p id="regId">false</p>	 
+					 	 
 			 <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="window.plugins.socialsharing.share('ಪ್ರಸಿದ್ದ ಕನ್ನಡ ಆರಾದನೆ ಹಾಡುಗಳ ಸಾಹಿತ್ಯ ಮತ್ತು ಸಂಗೀತ.  Popular Kannada Worship and Praise song lyrics(in Kannada and English) with chords sheet. Click here to download our App', null, 'http://kannadachristiansongs.in/KannadaBibles/lyrics-chordsadandroid.png', 'https://goo.gl/QaSc3T')">  
             <i class="material-icons white">share</i> 
             </button> 
