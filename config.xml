@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "any.test"
+        id        = "com.allchristianvideos.kannada"
         version   = "1.0.0"
 		android-versionCode="10000">
 
@@ -26,6 +26,7 @@
 	<resource-file src="google-services.json" target="google-services.json" />
         <allow-intent href="market:*" />
     </platform>
+	 <plugin name="phonegap-plugin-push" spec="~1.5.3" />
     <preference name="android-minSdkVersion" value="19" /><!-- Android 4.4 is minimum supported -->
 	<preference name="android-build-tool" value="gradle" />
 	<preference name="StatusBarOverlaysWebView" value="false" />

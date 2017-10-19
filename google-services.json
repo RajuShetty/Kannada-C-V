@@ -1,31 +1,27 @@
 {
   "project_info": {
-    "project_number": "286516895302",
-    "firebase_url": "https://testing-2556a.firebaseio.com",
-    "project_id": "testing-2556a",
-    "storage_bucket": "testing-2556a.appspot.com"
+    "project_number": "639924066309",
+    "firebase_url": "https://kannada-christian-videos.firebaseio.com",
+    "project_id": "kannada-christian-videos",
+    "storage_bucket": "kannada-christian-videos.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:286516895302:android:20f3503ed4836d9f",
+        "mobilesdk_app_id": "1:639924066309:android:6ac2288d619f2c46",
         "android_client_info": {
-          "package_name": "any.test"
+          "package_name": "com.allchristianvideos.kannada"
         }
       },
       "oauth_client": [
         {
-          "client_id": "286516895302-8d9i11rc86ig8o7oivmfjlojdtneidv5.apps.googleusercontent.com",
-          "client_type": 3
-        },
-        {
-          "client_id": "286516895302-op57e04iefrve41a0rhs3gv29oifvbac.apps.googleusercontent.com",
+          "client_id": "639924066309-3ruku1ch1qgkc0541lslf2abeuu0fe1b.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDAOvVCLdls1QLGpNqxihQptBspUvPy41Q"
+          "current_key": "AIzaSyCZ4pDK2qxzpeRG5YnH0egJQp6bsYdArN0"
         }
       ],
       "services": {
