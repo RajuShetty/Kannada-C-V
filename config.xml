@@ -36,7 +36,8 @@
 <!-- Requires cli-6.4.0 but we recommend using the latest version. -->
 <preference name="phonegap-version" value="cli-7.0.1" />
 
-<preference name="android-minSdkVersion" value="15" />
+<preference name="android-minSdkVersion"    value="9" />
+<preference name="android-targetSdkVersion" value="14" />
 	<!-- one signal push End -->
   
 
