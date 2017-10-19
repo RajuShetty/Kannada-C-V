@@ -18,15 +18,15 @@
         Raju Shetty
     </author>
 
-    <platform name="ios"></platform>
-  <preference name="phonegap-version" value="cli-7.0.1" />
-	<preference name='pgb-builder-version' value='2' />
+    <!-- one signal push -->
+	<gap:plugin name="onesignal-cordova-plugin" spec="^2.1.1" source="npm" />
+<!-- Requires cli-6.4.0 but we recommend using the latest version. -->
+<preference name="phonegap-version" value="cli-7.0.1" />
+	<!-- one signal push End -->
+  
 	
-    <platform name="android">
-	<resource-file src="google-services.json" target="google-services.json" />
-        <allow-intent href="market:*" />
-    </platform>
-	 <plugin name="phonegap-plugin-push" spec="~1.5.3" />
+	
+	
     <preference name="android-minSdkVersion" value="19" /><!-- Android 4.4 is minimum supported -->
 	<preference name="android-build-tool" value="gradle" />
 	<preference name="StatusBarOverlaysWebView" value="false" />
