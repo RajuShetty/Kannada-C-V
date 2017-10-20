@@ -10,7 +10,7 @@ body, html {
     position: absolute;
 }
 #online {
-    height: 100%;
+    height: 800px;
     width: 100%;
     position: relative;
     z-index: 1;
