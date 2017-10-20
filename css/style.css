@@ -142,16 +142,16 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 	height: 48px;
 }
 .bg-2 {
-	background: url('../img/2.jpg') no-repeat center / cover;
+	background: url('../img/songs.gif') no-repeat center / cover;
 }
 .bg-3 {
-	background: url('../img/3.jpg') no-repeat center / cover;
+	background: url('../img/stories.gif') no-repeat center / cover;
 }
 .bg-4 {
-	background: url('../img/4.jpg') no-repeat center / cover;
+	background: url('../img/movies.gif') no-repeat center / cover;
 }
 .bg-5 {
-	background: url('../img/5.jpg') no-repeat center / cover;
+	background: url('../img/sermon.jpg') no-repeat center / cover;
 }
 .bg-6 {
 	background: url('../img/6.jpg') no-repeat center / cover;
@@ -364,7 +364,7 @@ html, body {
 	font-family: 'Roboto';
 	font-size:16px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5  {
     text-shadow: rgba(0,0,0,.12) 0 0 1px;
     font-weight: 400;
     line-height: 1.2;
@@ -1075,7 +1075,7 @@ thead, tbody, .mdl-data-table__cell--non-numeric {
 	font-size: 14px;
 }
 .card-footer {
-	padding: 16px;
+	padding: 4px;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -1579,5 +1579,30 @@ td .mdl-checkbox__ripple-container {
 
 /* Raju's Code */
 
+.homemenu{
+padding: 10px 0px 0px 40px;
+font-size:70px;
 
+}
 
+h6 {
+text-shadow: rgba(0,0,0,.12) 0 0 1px;
+    font-weight: 400;
+    line-height: 0.6;
+	color: #969798;
+	text-align:center;
+	margin: 10px 0 10px;
+
+}
+#overlay .card-content{
+
+    display: block;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(33, 150, 243, 0.43);
+    
+cursor: pointer;
+}
