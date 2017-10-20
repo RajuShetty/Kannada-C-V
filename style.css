@@ -10,8 +10,10 @@ body, html {
     position: absolute;
 }
 #online {
-    height: 100%;
-    width: 100%;
+    display: block;       /* iframes are inline by default */
+	border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
     position: relative;
     z-index: 1;
     overflow-y: scroll !important;
