@@ -10,10 +10,8 @@ body, html {
     position: absolute;
 }
 #online {
-    display: block;       /* iframes are inline by default */
-	border: none;         /* Reset default border */
-    height: 100vh;        /* Viewport-relative units */
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     position: relative;
     z-index: 1;
     overflow-y: scroll !important;
@@ -24,8 +22,11 @@ body, html {
 }
 
 #online iframe {
-    width: 100%;
-    height: 100%;
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
 }
 
 #offline-footer, #online-footer {
