@@ -12,13 +12,14 @@ body, html {
 #online {
     height: 100%;
     width: 100%;
-    position: relative;
-    z-index: 1;
+    Position:static;
+    z-index: 1000000;
     overflow-y: scroll !important;
     overflow-x: hidden !important;
     -webkit-overflow-scrolling: touch !important;
 	background: url("audio.svg") 0px 0px no-repeat; 
 	background-position: top;
+	
 }
 
 #online iframe {
