@@ -90,6 +90,8 @@
     <access origin="*" subdomains="true" />
     <allow-navigation href="*" /><!-- iOS render iframe content -->
     <!-- https://github.com/phonegap/build/issues/508 -->
+	<allow-intent href="http://*/*"/>
+    <allow-intent href="https://*/*"/>
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
