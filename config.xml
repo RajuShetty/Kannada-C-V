@@ -8,7 +8,7 @@
 		android-versionCode="10000">
 
     <!-- Change app id (above), name, description, and author. App ID can be any reverse domain name, such as com.mycompany.app -->
-    <name>Kannada Christian Videos</name>
+    <name>KC Videos</name>
 
     <description>
         Old and new, we have made biggest collection of the Kannada Christian Videos. Single website for Karnataka. 
@@ -36,7 +36,7 @@
 <!-- Requires cli-6.4.0 but we recommend using the latest version. -->
 <preference name="phonegap-version" value="cli-7.0.1" />
 
-<preference name="android-minSdkVersion" value="15" />
+<preference name="android-minSdkVersion" value="19" />
 	<!-- one signal push End -->
   
 
@@ -56,7 +56,7 @@
     
             <!-- Crosswalk enhances Android performance, but makes the app size larger-->
    <gap:plugin name="cordova-plugin-crosswalk-webview" source="npm" version="2.3.0" />
-	<preference name="xwalkMode" value="lite" /> 
+	
     <!-- to show app faster, set autohide to true. iOS only -->
     <preference name="AutoHideSplashScreen" value="false" />
     <preference name="StatusBarOverlaysWebView" value="false" />
