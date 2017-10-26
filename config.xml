@@ -4,8 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.allchristianvideos.kannada"
-        version   = "1.0.1"
-		android-versionCode="10001">
+        version   = "1.0.2"
+		android-versionCode="10002">
 
     <!-- Change app id (above), name, description, and author. App ID can be any reverse domain name, such as com.mycompany.app -->
     <name>KC Videos</name>
@@ -87,11 +87,11 @@
     <icon src="icon.png" />
 
     <content src="index.html" /> 
-    <access origin="*" subdomains="true" />
+    <access origin="http://allchristianvideos.com/*/" subdomains="true" />
     <allow-navigation href="*" /><!-- iOS render iframe content -->
     <!-- https://github.com/phonegap/build/issues/508 -->
-	<allow-intent href="http://*/*"/>
-    <allow-intent href="https://*/*"/>
+	 <!--<allow-intent href="http://*/*"/>
+    <allow-intent href="https://*/*"/> -->
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
