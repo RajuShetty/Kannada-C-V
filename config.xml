@@ -49,7 +49,7 @@
     <gap:plugin name="cordova-plugin-device" source="npm" spec="1.1.2" />
     <gap:plugin name="cordova-plugin-dialogs" source="npm" spec="1.2.1" />
     <gap:plugin name="cordova-plugin-geolocation" source="npm" spec="2.2.0" />
-    <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
+   <!-- <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />-->
     <gap:plugin name="cordova-plugin-network-information" source="npm" spec="1.2.1" />
    <!-- <gap:plugin name="cordova-plugin-splashscreen" source="npm" spec="3.2.2" /> -->
 
@@ -87,7 +87,7 @@
     <icon src="icon.png" />
 
     <content src="index.html" /> 
-    <access origin="http://allchristianvideos.com/*/" subdomains="true" />
+    <access origin="*" subdomains="true" />
     <allow-navigation href="*" /><!-- iOS render iframe content -->
     <!-- https://github.com/phonegap/build/issues/508 -->
 	 <!--<allow-intent href="http://*/*"/>
