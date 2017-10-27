@@ -49,5 +49,10 @@
                 onLoad();
             } );
         </script>
+	<script>	
+		$("a[target='_blank']").click(function(e){
+  e.preventDefault();
+  window.open($(e.currentTarget).attr('href'), '_system', '');
+}); </script>
     </body>
 </html>
